@@ -1,0 +1,2 @@
+couchbase>=2.0.0
+pymemcache>=1.3.5
