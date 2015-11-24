@@ -1,16 +1,23 @@
-# Python Couchbase Memcached Mirror
+---
+tags: [memcached, databases]
+language: [python]
+requirements: [couchbase, pymemcache]
+:blurb: Demonstrate Couchbase's CRUD (KV Access) by displaying it side-by-side with the Memcached API
+---
+
+== Python Couchbase Memcached Mirror
 
 This python module provides a `CouchbaseMemcacheMirror` class which allows
 mirroring of data between Couchbase and Memcached. It uses the
-[pymemcache](https://github.com/pinterest/pymemcache) module for Memcached
-access and the [couchbase](https://github.com/couchbase/couchbase-python-client)
-for Couchbase access.
+https://github.com/pinterest/pymemcache[pymemcache] module for Memcached
+access and the https://github.com/couchbase/couchbase-python-client)[couchbase]
+module for Couchbase access.
 
 The class may be used in your code (using a primarily memcached-style API)
 to read and write data to and from Memcached and Couchbase. The class will
 transparently write to both Couchbase and Memcached clusters.
 
-# Using
+== Using
 
 To use this module, import it into your code. You can also run a standalone example
 
@@ -19,7 +26,7 @@ To use this module, import it into your code. You can also run a standalone exam
     Value from couchbase: {u'entry': u'Mirror value', u'updated': 1446743031.692772}
     Value from Memcached: {'entry': 'Mirror value', 'updated': 1446743031.692772}
 
-# Primary and secondary data sources
+== Primary and secondary data sources
 
 This module allows you to select which data source is a primary for read and write
 access. This affects `gets`, get` and `cas` operations: `get` operations are performed against
