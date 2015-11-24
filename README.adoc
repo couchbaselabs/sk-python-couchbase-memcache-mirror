@@ -5,7 +5,9 @@
 :language: python
 
 // What is needed for this project (this might better go into language-specific sections,
-// unless it requires an external product (for example, another server)
+// unless it requires an external product (for example, another server). For repeated
+// requirements it should be possible to use an asciidoc include to include more
+// detailed explanations
 :requirements: [Memcached]
 
 // This text is displayed as the short description of the project
